@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 350px;
+    background: #ffffff;
+    padding: 30px 30px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+header h1 {
+    font-size: 28px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form label {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input {
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+form input:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #fff;
+}
+
+/* Buttons Styling */
+button, a {
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.login-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    width: 100%;
+    max-width: 300px;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+.links a {
+    font-size: 14px;
+    color: #007bff;
+    transition: all 0.3s ease;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Additional Button Styling */
+.btn-register {
+    background-color: #28a745;
+    color: white;
+    width: 100%;
+    max-width: 120px;
+}
+
+.btn-register:hover {
+    background-color: #218838;
+}
+
+.btn-forgot-password {
+    background-color: #ffc107;
+    color: white;
+    width: 100%;
+    max-width: 120px;
+}
+
+.btn-forgot-password:hover {
+    background-color: #e0a800;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    form input, .login-btn, .btn-register, .btn-forgot-password {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
